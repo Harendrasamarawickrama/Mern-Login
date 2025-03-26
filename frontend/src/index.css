@@ -1,0 +1,114 @@
+/* index.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Signup Container */
+.signup-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group input:focus {
+  border-color: #28a745;
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Signup Button */
+.signup-button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #218838;
+}
+
+/* Logout Button */
+.logout-button {
+  width: 40%;
+  align-content: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #a72828;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #882121;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 15px;
+  }
+
+  .form-group input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .signup-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
